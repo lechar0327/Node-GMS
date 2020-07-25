@@ -51,6 +51,6 @@ app.use('/api/upload',uploadImgRoute);
 app.use('/api/menu',menuRoute);
 app.use('/api/user',userRoute);
 
-app.listen(3000,()=>{
+app.listen(10086,()=>{
     console.log("服务启动成功!");  
 });
