@@ -8,9 +8,10 @@
  */
 module.exports = (req, res, next) => {
 
-    var path = req.file.path.replace('public\\','');
-    var url = 'http://' + req.headers.host + '/' + path;
+    var path = req.file.path.replace('public\\', '');
 
+    var url = 'http://' + req.headers.host + '/' + path;
+    url = url.replace('public/', '');
     //存储返回对象数据
     let responseDTO = { code: 0, msg: "", data: url };
     responseDTO.msg = "上传成功";
