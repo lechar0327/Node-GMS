@@ -7,7 +7,7 @@ const router = express.Router();
 const { insertMenu, queryMenu } = require('../services/menuServices');
 
 /**
- * @api {post} http://10.36.147.178:3000/api/menu/insertMenu 添加菜单
+ * @api {post} http://129.204.229.240:10086/api/menu/insertMenu 添加菜单
  * @apiDescription 添加菜单
  * @apiName menu-insert
  * @apiGroup menu
@@ -25,13 +25,13 @@ const { insertMenu, queryMenu } = require('../services/menuServices');
  *      "msg" : "创建成功"
  * 
  *  }
- * @apiSampleRequest http://10.36.147.178:3000/api/menu/insertMenu
+ * @apiSampleRequest http://129.204.229.240:10086/api/menu/insertMenu
  * @apiVersion 1.0.0
  */
 router.post('/insertMenu', insertMenu);
 
 /**
- * @api {get} http://10.36.147.178:3000/api/menu/queryMenu 菜单查询
+ * @api {get} http://129.204.229.240:10086/api/menu/queryMenu 菜单查询
  * @apiDescription 菜单查询
  * @apiName menu-query
  * @apiGroup menu
@@ -46,7 +46,7 @@ router.post('/insertMenu', insertMenu);
  *      "msg" : "ok"
  * 
  *  }
- * @apiSampleRequest http://10.36.147.178:3000/api/menu/queryMenu
+ * @apiSampleRequest http://129.204.229.240:10086/api/menu/queryMenu
  * @apiVersion 1.0.0
  */
 router.get('/queryMenu', queryMenu);

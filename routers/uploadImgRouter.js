@@ -37,7 +37,7 @@ var upload = multer({
 
 
 /**
- * @api {post} http://10.36.147.178:3000/api/upload 图片上传
+ * @api {post} http://129.204.229.240:10086/api/upload 图片上传
  * @apiDescription 图片上传(标签name='file')
  * @apiName img-upload
  * @apiGroup upload
@@ -49,7 +49,7 @@ var upload = multer({
  *      "msg" : "ok"
  * 
  *  }
- * @apiSampleRequest http://10.36.147.178:3000/api/upload 
+ * @apiSampleRequest http://129.204.229.240:10086/api/upload 
  * @apiVersion 1.0.0
  */
 router.post('/', upload.single('file'), uploadImg);

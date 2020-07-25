@@ -15,7 +15,7 @@ const {
 } = require('../services/goodsServices');
 
 /**
- * @api {post} http://10.36.147.178:3000/api/good/insertGoods 添加修改商品
+ * @api {post} http://129.204.229.240:10086/api/good/insertGoods 添加修改商品
  * @apiDescription 添加商品
  * @apiName good-options
  * @apiGroup good
@@ -35,13 +35,13 @@ const {
  *      "msg" : "ok"
  * 
  *  }
- * @apiSampleRequest http://10.36.147.178:3000/api/good/insertGoods
+ * @apiSampleRequest http://129.204.229.240:10086/api/good/insertGoods
  * @apiVersion 1.0.0
  */
 router.post('/insertGoods', insertUpdateGoods);
 
 /**
- * @api {get} http://10.36.147.178:3000/api/good/queryGoodsList 查询商品列表
+ * @api {get} http://129.204.229.240:10086/api/good/queryGoodsList 查询商品列表
  * @apiDescription 查询商品列表
  * @apiName good-query
  * @apiGroup good
@@ -60,14 +60,14 @@ router.post('/insertGoods', insertUpdateGoods);
  *      "msg" : "ok"
  * 
  *  }
- * @apiSampleRequest http://10.36.147.178:3000/api/good/queryGoodsList
+ * @apiSampleRequest http://129.204.229.240:10086/api/good/queryGoodsList
  * @apiVersion 1.0.0
  */
 router.get('/queryGoodsList', queryGoodsList);
 
 
 /**
- * @api {get} http://10.36.147.178:3000/api/good/queryGoodsBaseInfo 查询商品基础信息
+ * @api {get} http://129.204.229.240:10086/api/good/queryGoodsBaseInfo 查询商品基础信息
  * @apiDescription 查询商品基础信息
  * @apiName goodbaseInfo-query
  * @apiGroup good
@@ -81,13 +81,13 @@ router.get('/queryGoodsList', queryGoodsList);
  *      "msg" : "ok"
  * 
  *  }
- * @apiSampleRequest http://10.36.147.178:3000/api/good/queryGoodsBaseInfo
+ * @apiSampleRequest http://129.204.229.240:10086/api/good/queryGoodsBaseInfo
  * @apiVersion 1.0.0
  */
 router.get('/queryGoodsBaseInfo', queryGoodsBaseInfo);
 
 /**
- * @api {post} http://10.36.147.178:3000/api/good/deleteGood 删除商品信息
+ * @api {post} http://129.204.229.240:10086/api/good/deleteGood 删除商品信息
  * @apiDescription 删除商品信息
  * @apiName good-delete
  * @apiGroup good
@@ -100,7 +100,7 @@ router.get('/queryGoodsBaseInfo', queryGoodsBaseInfo);
  *      "msg" : "ok"
  * 
  *  }
- * @apiSampleRequest http://10.36.147.178:3000/api/good/deleteGood
+ * @apiSampleRequest http://129.204.229.240:10086/api/good/deleteGood
  * @apiVersion 1.0.0
  */
 router.post('/deleteGood', deleteGood);

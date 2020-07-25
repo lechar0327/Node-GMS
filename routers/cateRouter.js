@@ -7,7 +7,7 @@ const router = express.Router();
 const { insertCates, queryCates } = require('../services/catesServices');
 
 /**
- * @api {post} http://10.36.147.178:3000/api/good/insertCates 添加品类
+ * @api {post} http://129.204.229.240:10086/api/good/insertCates 添加品类
  * @apiDescription 添加品类
  * @apiName cate-insertCates
  * @apiGroup cate
@@ -22,13 +22,13 @@ const { insertCates, queryCates } = require('../services/catesServices');
  *      "msg" : "创建成功"
  * 
  *  }
- * @apiSampleRequest http://10.36.147.178:3000/api/cate/insertCates
+ * @apiSampleRequest http://129.204.229.240:10086/api/cate/insertCates
  * @apiVersion 1.0.0
  */
 router.post('/insertCates', insertCates);
 
 /**
- * @api {get} http://10.36.147.178:3000/api/cate/queryCates 查询品类
+ * @api {get} http://129.204.229.240:10086/api/cate/queryCates 查询品类
  * @apiDescription 查询品类
  * @apiName cate-query
  * @apiGroup cate
@@ -43,7 +43,7 @@ router.post('/insertCates', insertCates);
  *      "msg" : "ok"
  * 
  *  }
- * @apiSampleRequest http://10.36.147.178:3000/api/cate/queryCates
+ * @apiSampleRequest http://129.204.229.240:10086/api/cate/queryCates
  * @apiVersion 1.0.0
  */
 router.get('/queryCates', queryCates);
