@@ -26,7 +26,7 @@
   },
   "apidoc": {
     "name": "商品管理系统后台",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "apiDoc 商品管理系统接口文档",
     "title": "商品管理系统接口文档"
   }
